@@ -1,0 +1,27 @@
+@model List<Post>
+
+@{
+  int? uid = @Context.Session.GetInt32("UserId");
+}
+<div class="container">
+    <h2>All Posts</h2>
+@foreach(Post post in Model)
+{
+    <div class="card shadow p-3 rounded">
+        <h4>
+            <a asp-controller="Post" asp-action="Details" asp-route-PostId="@post.PostId">@post.Topic</a>
+        </h4>
+        <p>
+            @post.Body
+        </p>
+        <img src="@post.ImgUrl" alt="Post">
+        <small class="text-muted">
+            <a asp-controller="Home" asp-action="AuthorPage" asp-route-userId="@post.Author.UserId"> 
+            By: @post.Author.FullName() 
+            </a>
+            
+            submitted: @post.CreatedAt
+        </small>
+    </div>
+}
+</div>

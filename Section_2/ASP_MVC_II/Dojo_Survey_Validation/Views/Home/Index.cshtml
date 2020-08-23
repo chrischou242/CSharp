@@ -1,0 +1,45 @@
+@model Survey
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Login</title>
+</head>
+<body>
+    <h1>Dojo Survey</h1>
+    <form asp-action="Submit" asp-controller="home" method='post'>
+        <p>
+            <span asp-validation-for = "FirstName"></span>
+            <label asp-for="FirstName">FirstName</label>
+            <input asp-for="FirstName" id="FirstName">
+        </p>
+
+        <p>
+            <span asp-validation-for = "Location"></span>
+            <label asp-for="Location">Location</label>
+            <select asp-for="Location" id="Location">
+                <option value="oakland">Oakland</option>
+                <option value="seattle">Seatle</option>
+                <option value="python">Python</option>
+            </select>
+        </p>
+
+        <p>
+            <span asp-validation-for="Language"></span>
+            <label asp-for="Language">Language</label>
+            <select asp-for="Language" id="Language">
+                <option value="python">Python</option>
+                <option value="csharp">C#</option>
+                <option value="mern">mern</option>
+            </select>
+        </p>
+
+        <p>
+            <span asp-validation-for="Comment"></span>
+            <textarea asp-for="Comment" id="Comment" cols="30" rows="10"></textarea>
+        </p>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

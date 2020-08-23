@@ -1,0 +1,30 @@
+@model List<Chef>
+<h1>Chef</h1>
+<h1><a asp-action="ViewDish" asp-controller="Dish">Dish</a></h1>
+<a asp-action="NewChef" asp-controller="Chef">Add A Chef</a>
+
+<h2>Check out our roster of Chefs</h2>
+
+
+<table>
+    <thead>
+        <th>Name</th>
+        <th>Age</th>
+        <th>#ofDishes</th>
+    </thead>
+    <tbody>
+        @foreach(Chef chef in Model)
+        {
+            <tr>
+                <td>@chef.FirstName</td>
+                <td>@chef.DOB.</td>
+                <td>@chef.CreatedDishes.Count()</td>
+            </tr>
+           
+        }
+       
+    </tbody>
+
+</table>
+
+

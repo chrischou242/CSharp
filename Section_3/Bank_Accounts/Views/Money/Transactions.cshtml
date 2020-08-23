@@ -1,0 +1,36 @@
+@model NewWithdrawWrapper
+<h1>Welcome @Model.Form.FirstName</h1>
+asp route route id
+<form asp-controller="Money" asp-action="Create_Deposit_Withdraw" asp-route-UserID="@Model.Form.UserId" method="POST">
+    <p>
+        <label asp-for="Money.Amount"></label>
+        <span asp-validation-for="Money.Amount"class="text-danger font-weight-bold"></span>
+        <input asp-for="Money.Amount">
+    </p>
+
+     <p>
+        <label asp-for="Money.CreatedAt"></label>
+        <span asp-validation-for="Money.CreatedAt"class="text-danger font-weight-bold"></span>
+        <input asp-for="Money.CreatedAt">
+    </p>
+        <button>DSubmit</button>
+
+<h1>Current Balance @Model.Money.Amount</h1>
+</form>
+<table>
+    <thead>
+        <td>Amount</td>
+        <td>Date</td>
+    </thead>
+    <tbody>
+        <tr>
+            @foreach(Transcations money in Model.Transcations)
+            {
+            <td>@money.Amount</td>
+            <td>@money.CreatedAt</td>
+            }
+        
+        </tr>
+    </tbody>
+</table>
+

@@ -1,0 +1,46 @@
+@model ActivityWrapper
+<h1>Dojo Activity Center</h1>
+
+<table>
+    <thead>
+        <th>Activity</th>
+        <th>Date and Time</th>
+        <th>Duration</th>
+        <th>Event Coordinator</th>
+        <th>No of Participants</th>
+        <th>Actions</th>
+    </thead>
+
+    <tbody>
+       
+            @foreach (Activityy Act in Model.AllActivities)
+            {
+                 <tr>
+                <td>
+                <a asp-action="details" asp-controller="Test" asp-route-ActId="@Act.ActivityId">@Act.Title</a>
+                </td>
+                <td>@Act.Time</td>
+                <td>@Act.HowLong @Act.Length</td>
+                <td>@Act.Activiting.FirstName</td>
+                <td>@Act.PeopleJoining.Count();</td>
+                <td>
+                    @if(Act.UserId == @Model.LoggedUser.UserId)
+                    {
+                        <a asp-action="delete"asp-controller="Test" asp-route-ActId="@Act.ActivityId" >Delete</a>
+                    }
+                    else if (Act.PeopleJoining.Any(A => A.UserId == @Model.LoggedUser.UserId))
+                    {
+                        <a asp-action="Leave"asp-controller="Test" asp-route-ActId="@Act.ActivityId" >Leave</a>
+                    }
+                    else
+                    {
+                        <a asp-action="Join"asp-controller="Test" asp-route-ActId="@Act.ActivityId" >Join</a>
+                    }
+                </td>
+                </tr>
+            }
+        
+
+    </tbody>
+
+</table>

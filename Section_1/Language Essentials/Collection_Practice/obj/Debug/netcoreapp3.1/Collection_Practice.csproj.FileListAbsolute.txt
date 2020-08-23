@@ -1,0 +1,11 @@
+C:\Dojo_Assignments\C#\Week 1\Language Essentials\Collection_Practice\bin\Debug\netcoreapp3.1\Collection_Practice.exe
+C:\Dojo_Assignments\C#\Week 1\Language Essentials\Collection_Practice\bin\Debug\netcoreapp3.1\Collection_Practice.deps.json
+C:\Dojo_Assignments\C#\Week 1\Language Essentials\Collection_Practice\bin\Debug\netcoreapp3.1\Collection_Practice.runtimeconfig.json
+C:\Dojo_Assignments\C#\Week 1\Language Essentials\Collection_Practice\bin\Debug\netcoreapp3.1\Collection_Practice.runtimeconfig.dev.json
+C:\Dojo_Assignments\C#\Week 1\Language Essentials\Collection_Practice\bin\Debug\netcoreapp3.1\Collection_Practice.dll
+C:\Dojo_Assignments\C#\Week 1\Language Essentials\Collection_Practice\bin\Debug\netcoreapp3.1\Collection_Practice.pdb
+C:\Dojo_Assignments\C#\Week 1\Language Essentials\Collection_Practice\obj\Debug\netcoreapp3.1\Collection_Practice.csprojAssemblyReference.cache
+C:\Dojo_Assignments\C#\Week 1\Language Essentials\Collection_Practice\obj\Debug\netcoreapp3.1\Collection_Practice.AssemblyInfoInputs.cache
+C:\Dojo_Assignments\C#\Week 1\Language Essentials\Collection_Practice\obj\Debug\netcoreapp3.1\Collection_Practice.AssemblyInfo.cs
+C:\Dojo_Assignments\C#\Week 1\Language Essentials\Collection_Practice\obj\Debug\netcoreapp3.1\Collection_Practice.dll
+C:\Dojo_Assignments\C#\Week 1\Language Essentials\Collection_Practice\obj\Debug\netcoreapp3.1\Collection_Practice.pdb

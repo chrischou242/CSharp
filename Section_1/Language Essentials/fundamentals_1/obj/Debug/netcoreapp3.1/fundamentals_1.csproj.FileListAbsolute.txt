@@ -1,0 +1,11 @@
+C:\Dojo_Assignments\C#\Week 1\Language Essentials\fundamentals_1\bin\Debug\netcoreapp3.1\fundamentals_1.exe
+C:\Dojo_Assignments\C#\Week 1\Language Essentials\fundamentals_1\bin\Debug\netcoreapp3.1\fundamentals_1.deps.json
+C:\Dojo_Assignments\C#\Week 1\Language Essentials\fundamentals_1\bin\Debug\netcoreapp3.1\fundamentals_1.runtimeconfig.json
+C:\Dojo_Assignments\C#\Week 1\Language Essentials\fundamentals_1\bin\Debug\netcoreapp3.1\fundamentals_1.runtimeconfig.dev.json
+C:\Dojo_Assignments\C#\Week 1\Language Essentials\fundamentals_1\bin\Debug\netcoreapp3.1\fundamentals_1.dll
+C:\Dojo_Assignments\C#\Week 1\Language Essentials\fundamentals_1\bin\Debug\netcoreapp3.1\fundamentals_1.pdb
+C:\Dojo_Assignments\C#\Week 1\Language Essentials\fundamentals_1\obj\Debug\netcoreapp3.1\fundamentals_1.csprojAssemblyReference.cache
+C:\Dojo_Assignments\C#\Week 1\Language Essentials\fundamentals_1\obj\Debug\netcoreapp3.1\fundamentals_1.AssemblyInfoInputs.cache
+C:\Dojo_Assignments\C#\Week 1\Language Essentials\fundamentals_1\obj\Debug\netcoreapp3.1\fundamentals_1.AssemblyInfo.cs
+C:\Dojo_Assignments\C#\Week 1\Language Essentials\fundamentals_1\obj\Debug\netcoreapp3.1\fundamentals_1.dll
+C:\Dojo_Assignments\C#\Week 1\Language Essentials\fundamentals_1\obj\Debug\netcoreapp3.1\fundamentals_1.pdb

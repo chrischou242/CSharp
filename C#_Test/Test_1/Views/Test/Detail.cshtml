@@ -1,0 +1,34 @@
+@model DetailWrapper
+
+<h1>@Model.Activities.Title</h1>
+<h2>Event Coordinator @Model.Activities.Activiting.FirstName</h2>
+<h2>Description</h2>
+<p>
+    @Model.Activities.Description
+</p>
+
+ @if(@Model.Activities.UserId == @Model.LoggedUser.UserId)
+    {
+        <a asp-action="delete"asp-controller="Test" asp-route-ActId="@Model.Activities.ActivityId" >Delete</a>
+    }
+    else if (@Model.Activities.PeopleJoining.Any(A => A.UserId == @Model.LoggedUser.UserId))
+    {
+        <a asp-action="Leave"asp-controller="Test" asp-route-ActId="@Model.Activities.ActivityId" >Leave</a>
+    }
+    else
+    {
+        <a asp-action="Join"asp-controller="Test" asp-route-ActId="@Model.Activities.ActivityId" >Join</a>
+    }
+<a asp-controller="Test" asp-action="ActHome">Home</a>
+
+<p>
+    Particpants
+</p>
+<ul> 
+    @foreach(Join UsersJoin in Model.Activities.PeopleJoining)
+    {
+        <li>@UsersJoin.Guest.FirstName</li>
+    }
+
+</ul>
+

@@ -1,0 +1,44 @@
+@model Post
+
+@{
+  int? uid = @Context.Session.GetInt32("UserId");
+}
+<div class="container">
+    
+<div class="card shadow p-3 rounded">
+        <h4>
+          >@Model.Topic
+        </h4>
+        <p>
+            @Model.Body
+        </p>
+        <img src="@Model.ImgUrl" alt="Post">
+        <small class="text-muted">
+            By: @Model.Author.FullName() 
+            @* submitted: @Model.CreatedAt *@
+        </small>
+          @if(uid ==Model.UserId)
+            {
+              <div class="Card-footer">
+                  <form 
+                  asp-controller="Post" 
+                  asp-action= "Delete" 
+                  asp-route-postId="@Model.PostId"
+                  method="POST"
+                  class="btn btn-danger">
+                <button class="btn btn-danger">Delete</button>
+                  </form>
+                  @if(uid ==Model.UserId)
+                  {
+                    <a asp-controller="Post" 
+                    asp-action="Edit" 
+                    asp-route-postId="@Model.PostId" 
+                    class="btn btn-warning" 
+                    >
+                    Edit</a>
+            }
+            
+        </div>
+            }
+    </div>
+</div>

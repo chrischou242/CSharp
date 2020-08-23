@@ -1,0 +1,33 @@
+@model List<Truck>
+<div class="container">
+    <h2>All Trucks</h2>
+    
+    @foreach (Truck truck in Model)
+    {
+        <div class ="row">
+            <div class="col-md-4">
+            <img src="@truck.ImgUrl" alt="Food" class="w-100">
+            <small class="text-muted">
+            Submitted By: @truck.SubmittedBy.FullName() on @truck.CreatedAt
+          </small>
+            </div>
+           
+
+
+            <div class="col-md-6">
+                <h3>@truck.Name</h3>
+                <p>Style @truck.Style</p>
+                <p class= "text-muted">
+                    Average rating: TBD
+                </p>
+            </div>
+
+            <div class="col-md-2">
+                <a asp-controller ="Trucks" asp-action="edit" class="btn btn-info" asp-route-TruckId="@truck.TruckId">edit</a> 
+                <a asp-controller ="Trucks" asp-action="Review" class="btn btn-success" asp-route-TruckId="@truck.TruckId">Review</a>
+            </div>
+
+        </div>
+    }
+   
+</div>

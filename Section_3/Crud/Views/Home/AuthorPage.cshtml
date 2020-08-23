@@ -1,0 +1,27 @@
+@model User
+
+<div class="container">
+    <h2 class="text-center">
+        Welcome to @Model.FullName()'s page (Member since @Model.CreatedAt)
+    </h2>
+
+    <p class.text-center>
+        Member since: @Model.CreatedAt | Total Posts: @Model.Posts.Count
+    </p>
+
+    @foreach(Post post in Model.Posts)
+{
+    <div class="card shadow p-3 rounded">
+        <h4>
+            <a asp-controller="Post" asp-action="Details" asp-route-PostId="@post.PostId">@post.Topic</a>
+        </h4>
+        <p>
+            @post.Body
+        </p>
+        <img src="@post.ImgUrl" alt="Post">
+        <small class="text-muted">
+            submitted: @post.CreatedAt
+        </small>
+    </div>
+}
+</div>

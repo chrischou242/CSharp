@@ -1,0 +1,14 @@
+@model List<Food>
+
+<div class="container">
+    <h2>All Posts</h2>
+@foreach(Food food in Model)
+{
+    <div class="card shadow p-3 rounded">
+        <h4>
+            <a href="/info/@food.DishId">@food.NameOfDish by @food.ChefName @food.DishId</a>
+        </h4>
+    
+    </div>
+}
+</div>

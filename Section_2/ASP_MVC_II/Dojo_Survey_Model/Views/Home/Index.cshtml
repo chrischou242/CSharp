@@ -1,0 +1,44 @@
+@using Dojo_Survey_Model.Models
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+</head>
+<body>
+    <form action="/survey" method='POST'>
+        <p>
+            <label for="name">Name</label>
+            <input type="text" name = "Name" id="Name">
+        </p>
+
+        <p>
+            <label for="location">Location</label>
+            <select name="Location" id="location">
+                <option value="oakland">Oakland</option>
+                <option value="seattle">Seattle</option>
+                <option value="Sanjose">San Jose</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="language">Lanugage</label>
+            <select name="Language" id="language">
+                <option value="csharp">C#</option>
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="comment">Comment</label>
+            <textarea name="Comment" id="comment" cols="30" rows="10"></textarea>
+        </p>
+
+
+        <button type="submit">Submit</button>
+
+    </form>
+</body>
+</html>

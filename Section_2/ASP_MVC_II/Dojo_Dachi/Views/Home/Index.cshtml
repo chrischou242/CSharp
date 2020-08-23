@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DojoDachi</h1>
+    <h1>You played with your Dojodachi @ViewBag.A1 @ViewBag.A2 @ViewBag.A3</h1>
+    <h2>Happiness: @ViewBag.H</h2>
+    <h2>Fullness: @ViewBag.F</h2>
+    <h2>Energy: @ViewBag.E</h2>
+    <h2>Meals: @ViewBag.M</h2>
+
+
+
+    <form action="feed" method='POST'>
+       <h3>Feed</h3>
+       <button type="submit">Feed</button>
+    </form>
+
+
+    <form action="play" method='POST'>
+       <h3>Play</h3>
+       <input type="hidden" name="live" value = "play">
+       <button type="submit">Play</button>
+    </form>
+
+    
+    <form action="work" method='POST'>
+       <h3>Work</h3>
+       <input type="hidden" name="live" value = "work">
+       <button type="submit">Work</button>
+    </form>
+
+    
+    <form action="Sleep" method='POST'>
+       <h3>Sleep</h3>
+       <input type="hidden" name="live" value = "sleep">
+       <button type="submit">Sleep</button>
+    </form>
+    
+    @if((ViewBag.E && ViewBag.F && ViewBag.H) >= 100 )
+    {
+        <h3>You Win! Restart</h3>
+            <form action="restart">
+            <button type="reset">Reset</button>
+            </form>
+    }
+
+    if((ViewBag.F && ViewBag.H)==0))
+    {
+        <h3>You Lose! Restart</h3>
+        <form action="restart">
+        
+        <button type="reset">Reset</button>
+        </form>
+
+    }
+    
+
+</body>
+</html>

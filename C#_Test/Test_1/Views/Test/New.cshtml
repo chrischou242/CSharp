@@ -1,0 +1,42 @@
+@model Activityy
+<h2>New Food</h2>
+<form asp-controller="Test" asp-action="AddAct" method="Post">
+    <p>
+        <label asp-for="Title"></label>
+        <span asp-validation-for = "Title"class="text-danger font-weight-bold"></span>
+        <input asp-for="Title">
+    </p>
+
+   
+    <p>
+        <label asp-for="Time"></label>
+        <span asp-validation-for = "Time"class="text-danger font-weight-bold"></span>
+        <input asp-for="Time">
+    </p>
+
+    <p>
+        <label asp-for="HowLong"></label>
+        <span asp-validation-for = "HowLong"class="text-danger font-weight-bold"></span>
+        <input asp-for="HowLong">
+    </p>
+    <p>
+        <label asp-for="Length"></label>
+        <span asp-validation-for = "Length"class="text-danger font-weight-bold"></span>
+        <select asp-for="Length">
+            <option value="Minutes">Minutes</option>
+            <option value="Hours">Hours</option>
+           </select>
+    </p>
+    <p>
+        <label asp-for="Description"></label>
+        <span asp-validation-for = "Description"class="text-danger font-weight-bold"></span>
+        <input asp-for="Description">
+    </p>
+
+   
+
+    <button >Add Activity</button>
+    
+</form>
+
+<a asp-controller="Test" asp-action="ActHome">Home</a>

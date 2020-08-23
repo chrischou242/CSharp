@@ -1,0 +1,11 @@
+@model User
+<h1>Success</h1>
+<h1>@Context.Session.GetString("UserName")</h1>
+@* 
+    <h2 asp-controller="Home" asp-action="LogOut" method="POST">LogOut</h2>
+    
+    <button asp-controller="Home" asp-action="LogOut" method="POST">LogOut</button> *@
+
+ @* <a asp-controller="Home" asp-action="LogOut" asp-route-UserId="@Model.UserId">LogOut</a> *@
+
+ <a href="/LogOut">LogOut</a>

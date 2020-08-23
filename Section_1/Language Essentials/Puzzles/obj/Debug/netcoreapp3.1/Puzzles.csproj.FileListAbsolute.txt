@@ -1,0 +1,11 @@
+C:\Dojo_Assignments\C#\Week 1\Language Essentials\Puzzles\bin\Debug\netcoreapp3.1\Puzzles.exe
+C:\Dojo_Assignments\C#\Week 1\Language Essentials\Puzzles\bin\Debug\netcoreapp3.1\Puzzles.deps.json
+C:\Dojo_Assignments\C#\Week 1\Language Essentials\Puzzles\bin\Debug\netcoreapp3.1\Puzzles.runtimeconfig.json
+C:\Dojo_Assignments\C#\Week 1\Language Essentials\Puzzles\bin\Debug\netcoreapp3.1\Puzzles.runtimeconfig.dev.json
+C:\Dojo_Assignments\C#\Week 1\Language Essentials\Puzzles\bin\Debug\netcoreapp3.1\Puzzles.dll
+C:\Dojo_Assignments\C#\Week 1\Language Essentials\Puzzles\bin\Debug\netcoreapp3.1\Puzzles.pdb
+C:\Dojo_Assignments\C#\Week 1\Language Essentials\Puzzles\obj\Debug\netcoreapp3.1\Puzzles.csprojAssemblyReference.cache
+C:\Dojo_Assignments\C#\Week 1\Language Essentials\Puzzles\obj\Debug\netcoreapp3.1\Puzzles.AssemblyInfoInputs.cache
+C:\Dojo_Assignments\C#\Week 1\Language Essentials\Puzzles\obj\Debug\netcoreapp3.1\Puzzles.AssemblyInfo.cs
+C:\Dojo_Assignments\C#\Week 1\Language Essentials\Puzzles\obj\Debug\netcoreapp3.1\Puzzles.dll
+C:\Dojo_Assignments\C#\Week 1\Language Essentials\Puzzles\obj\Debug\netcoreapp3.1\Puzzles.pdb

@@ -1,0 +1,52 @@
+@model NewDishWrapper
+
+<h2>@Model.Form.NameOfDish</h2>
+<h2>New Dish</h2>
+<form asp-controller="Dish" asp-action="AddDish" asp-route-ChefId="" method="Post">
+    <p>
+        <label asp-for="Form.NameOfDish"></label>
+        <span asp-validation-for="Form.NameOfDish"class="text-danger font-weight-bold"></span>
+        <input asp-for="Form.NameOfDish">
+    </p>
+
+    <p>
+        <label asp-for="Form.Calories"></label>
+        <span asp-validation-for="Form.Calories"class="text-danger font-weight-bold"></span>
+        <input asp-for="Form.Calories">
+    </p>
+
+   
+    <p>
+        <label asp-for="Form.Description"></label>
+        <span asp-validation-for="Form.Description"class="text-danger font-weight-bold"></span>
+        <input asp-for="Form.Description">
+    </p>
+
+    <p>
+        <label asp-for="Form.Tastiness"></label>
+        <span asp-validation-for="Form.Tastiness"class="text-danger font-weight-bold"></span>
+        <select asp-for="Form.Tastiness">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+    </p>
+
+    <p>
+        <label asp-for="Form.ChefId"></label>
+        <span asp-validation-for="Form.ChefId"class="text-danger font-weight-bold"></span>
+        <select asp-for="Form.ChefId">
+            @foreach(Chef Chefs in Model.AllChefs)
+            {
+                <option value="@Chefs.ChefId">@Chefs.FirstName</option>
+            }
+        </select>
+    </p>
+
+    <button >Add Chef</button>
+    
+</form>
+
+<a asp-controller="Dish" asp-action="DishHome">Home</a>

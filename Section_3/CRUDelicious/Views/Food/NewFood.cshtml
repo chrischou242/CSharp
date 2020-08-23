@@ -1,0 +1,38 @@
+@model Food
+<h2>New Food</h2>
+<form asp-controller="Food" asp-action="AddANewFood" method="Post">
+    <p>
+        <label asp-for="NameOfDish"></label>
+        <span asp-validation-for = "NameOfDish"class="text-danger font-weight-bold"></span>
+        <input asp-for="NameOfDish">
+    </p>
+
+    <p>
+        <label asp-for="ChefName"></label>
+        <span asp-validation-for = "ChefName"class="text-danger font-weight-bold"></span>
+        <input asp-for="ChefName">
+    </p>
+
+    <p>
+        <label asp-for="Calories"></label>
+        <span asp-validation-for = "Calories"class="text-danger font-weight-bold"></span>
+        <select asp-for="Calories">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+    </p>
+   
+
+    <p>
+        <label asp-for="Description"></label>
+        <span asp-validation-for = "Description"class="text-danger font-weight-bold"></span>
+        <input asp-for="Description">
+    </p>
+
+    <button >Add Dish</button>
+    
+</form>

@@ -1,0 +1,269 @@
+<div class="card">
+    <div class="card-header bg-dark text-light">Level 1</div>
+    <div class="card-body">
+        <p>Using the SportsORM, complete all the following queries and show their results on Level1.cshtml.</p>
+        <ol>
+            <li>...all womens' leagues</li>
+            <li>...all leagues where sport is any type of hockey</li>
+            <li>...all leagues where sport is something OTHER THAN football</li>
+            <li>...all leagues that call themselves "conferences"</li>
+            <li>...all leagues in the Atlantic region</li>
+            <li>...all teams based in Dallas</li>
+            <li>...all teams named the Raptors</li>
+            <li>...all teams whose location includes "City"</li>
+            <li>...all teams whose names begin with "T"</li>
+            <li>...all teams, ordered alphabetically by location</li>
+            <li>...all teams, ordered by team name in reverse alphabetical order</li>
+            <li>...every player with last name "Cooper"</li>
+            <li>...every player with first name "Joshua"</li>
+            <li>...every player with last name "Cooper" EXCEPT those with "Joshua" as the first name</li>
+            <li>...all players with first name "Alexander" OR first name "Wyatt"</li>
+        </ol>
+<h3>1.</h3>
+        <table>
+
+        <thead>
+            <th>League Name</th>
+            <th>League Sport</th>
+        </thead>
+
+           @foreach(var women in ViewBag.WomenLeagues)
+    {
+        <tr>
+            <td>@women.Name</td>
+            <td>@women.Sport</td>
+        </tr>
+    }
+        </table>
+
+
+<h3>2.</h3>
+        <table>
+          <thead>
+            <th>League Name</th>
+            <th>League Sport</th>
+        </thead>
+
+           @foreach(var hockey in ViewBag.HockeyLeagues)
+    {
+        <tr>
+            <td>@hockey.Name</td>
+            <td>@hockey.Sport</td>
+        </tr>
+    }
+        </table>
+
+
+<h3>4.</h3>
+        <table>
+          <thead>
+            <th>League Name</th>
+            <th>League Sport</th>
+        </thead>
+
+           @foreach(var C in ViewBag.Conferences)
+    {
+        <tr>
+            <td>@C.Name</td>
+            <td>@C.Sport</td>
+        </tr>
+    }
+        </table>
+
+<h3>5.</h3>
+        <table>
+          <thead>
+            <th>League Name</th>
+            <th>League Sport</th>
+        </thead>
+
+           @foreach(var AC in ViewBag.Atlantics)
+    {
+        <tr>
+            <td>@AC.Name</td>
+            <td>@AC.Sport</td>
+        </tr>
+    }
+        </table>
+
+<h3>6.</h3>
+        <table>
+          <thead>
+            <th>Location</th>
+            <th>TeamName</th>
+            <th>LeagueID</th>
+        </thead>
+
+           @foreach(var D in ViewBag.Dallas)
+    {
+        <tr>
+            <td>@D.Location</td>
+            <td>@D.TeamName</td>
+            <td>@D.TeamId</td>
+        </tr>
+    }
+        </table>
+
+<h3>7.</h3>
+        <table>
+          <thead>
+            <th>Location</th>
+            <th>TeamName</th>
+            <th>LeagueID</th>
+        </thead>
+
+           @foreach(var Rap in ViewBag.Raptors)
+    {
+        <tr>
+            <td>@Rap.Location</td>
+            <td>@Rap.TeamName</td>
+            <td>@Rap.TeamId</td>
+        </tr>
+    }
+        </table>
+
+<h3>8.</h3>
+        <table>
+          <thead>
+            <th>Location</th>
+            <th>TeamName</th>
+            <th>LeagueID</th>
+        </thead>
+
+           @foreach(var city in ViewBag.City)
+    {
+        <tr>
+            <td>@city.Location</td>
+            <td>@city.TeamName</td>
+            <td>@city.TeamId</td>
+        </tr>
+    }
+        </table>
+
+<h3>9.</h3>
+        <table>
+          <thead>
+            <th>Location</th>
+            <th>TeamName</th>
+            <th>LeagueID</th>
+        </thead>
+
+           @foreach(var T in ViewBag.Teamss)
+    {
+        <tr>
+            <td>@T.Location</td>
+            <td>@T.TeamName</td>
+            <td>@T.TeamId</td>
+        </tr>
+    }
+        </table>
+
+<h3>10.</h3>
+        <table>
+          <thead>
+            <th>Location</th>
+            <th>TeamName</th>
+            <th>LeagueID</th>
+        </thead>
+
+           @foreach(var order in ViewBag.Ordered)
+    {
+        <tr>
+            <td>@order.Location</td>
+            <td>@order.TeamName</td>
+            <td>@order.TeamId</td>
+        </tr>
+    }
+        </table>
+
+@* <h3>11.</h3>
+        <table>
+          <thead>
+            <th>Location</th>
+            <th>TeamName</th>
+            <th>LeagueID</th>
+        </thead>
+
+           @foreach(var Rev in ViewBag.inRevOrder )
+    {
+        <tr>
+            <td>@Rev.Location</td>
+            <td>@Rev.TeamName</td>
+            <td>@Rev.TeamId</td>
+        </tr>
+    }
+        </table>
+ *@
+
+
+
+ <h3>12.</h3>
+        <table>
+          <thead>
+            <th>PlayerId</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>TeamId</th>
+        </thead>
+
+           @foreach(var last in ViewBag.Cooper)
+    {
+        <tr>
+            <td>@last.PlayerId</td>
+            <td>@last.FirstName</td>
+            <td>@last.LastName</td>
+            <td>@last.TeamId</td>
+        </tr>
+    }
+        </table>
+
+<h3>13.</h3>
+        <table>
+          <thead>
+            <th>PlayerId</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>TeamId</th>
+        </thead>
+
+           @foreach(var first in ViewBag.Joshua)
+    {
+        <tr>
+            <td>@first.PlayerId</td>
+            <td>@first.FirstName</td>
+            <td>@first.LastName</td>
+            <td>@first.TeamId</td>
+        </tr>
+    }
+        </table>
+
+
+<h3>15.</h3>
+        <table>
+          <thead>
+            <th>PlayerId</th>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>TeamId</th>
+        </thead>
+
+           @foreach(var f in ViewBag.allFirstNames)
+    {
+        <tr>
+            <td>@f.PlayerId</td>
+            <td>@f.FirstName</td>
+            <td>@f.LastName</td>
+            <td>@f.TeamId</td>
+        </tr>
+    }
+        </table>
+
+
+    </div>
+</div>
+
+
+public int PlayerId {get;set;}
+        public string FirstName {get;set;}
+        public string LastName {get;set;}
+        public int TeamId {get;set;}

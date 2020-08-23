@@ -1,0 +1,37 @@
+@model Truck
+<h2>New Truck</h2>
+    <div class="container">
+        <form class="shadow p-3 mb-5 rounded" asp-controller="Trucks" asp-action="Editing" method="POST">
+            <div class="form-group">
+                <label asp-for="Name"></label>
+                <span asp-validation-for = "Name"class="text-danger font-weight-bold"></span>
+                <input asp-for="Name">
+            </div>
+        
+            <div class="form-group">
+                <label asp-for="Style"></label>
+                <span asp-validation-for = "Style"class="text-danger font-weight-bold"></span>
+                <input asp-for="Style">
+            </div>
+
+             <div class="form-group">
+                <label asp-for="Description"></label>
+                <span asp-validation-for = "Description"class="text-danger font-weight-bold"></span>
+                <input asp-for="Description">
+            </div>
+
+            <div class="form-group">
+                <label asp-for="ImgUrl"></label>
+                <span asp-validation-for = "ImgUrl"class="text-danger font-weight-bold"></span>
+                <input asp-for="ImgUrl">
+            </div>
+
+            <button class="btn btn-light">Submit</button>
+        
+        </form>
+        @if (@Context.Session.GetInt32("UserId") == Model.UserId)
+        {
+            <a asp-controller="Trucks" asp-action="delete" asp-route-TruckId="@Model.TruckId"> Delete</a>
+        }
+        <a asp-controller="Trucks" asp-action="cancel" > Cancel</a>
+    </div>

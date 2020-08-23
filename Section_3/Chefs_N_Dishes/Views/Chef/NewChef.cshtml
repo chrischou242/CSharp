@@ -1,0 +1,27 @@
+@model Chef
+<h2>New Food</h2>
+<form asp-controller="Chef" asp-action="AddChef" method="Post">
+    <p>
+        <label asp-for="FirstName"></label>
+        <span asp-validation-for = "FirstName"class="text-danger font-weight-bold"></span>
+        <input asp-for="FirstName">
+    </p>
+
+    <p>
+        <label asp-for="LastName"></label>
+        <span asp-validation-for = "LastName"class="text-danger font-weight-bold"></span>
+        <input asp-for="LastName">
+    </p>
+
+   
+    <p>
+        <label asp-for="DOB"></label>
+        <span asp-validation-for = "DOB"class="text-danger font-weight-bold"></span>
+        <input asp-for="DOB">
+    </p>
+
+    <button >Add Chef</button>
+    
+</form>
+
+<a asp-controller="Chef" asp-action="Home">Home</a>

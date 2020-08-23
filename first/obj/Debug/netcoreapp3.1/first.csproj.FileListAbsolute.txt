@@ -1,0 +1,11 @@
+C:\Dojo_Assignments\C#\first\bin\Debug\netcoreapp3.1\first.exe
+C:\Dojo_Assignments\C#\first\bin\Debug\netcoreapp3.1\first.deps.json
+C:\Dojo_Assignments\C#\first\bin\Debug\netcoreapp3.1\first.runtimeconfig.json
+C:\Dojo_Assignments\C#\first\bin\Debug\netcoreapp3.1\first.runtimeconfig.dev.json
+C:\Dojo_Assignments\C#\first\bin\Debug\netcoreapp3.1\first.dll
+C:\Dojo_Assignments\C#\first\bin\Debug\netcoreapp3.1\first.pdb
+C:\Dojo_Assignments\C#\first\obj\Debug\netcoreapp3.1\first.csprojAssemblyReference.cache
+C:\Dojo_Assignments\C#\first\obj\Debug\netcoreapp3.1\first.AssemblyInfoInputs.cache
+C:\Dojo_Assignments\C#\first\obj\Debug\netcoreapp3.1\first.AssemblyInfo.cs
+C:\Dojo_Assignments\C#\first\obj\Debug\netcoreapp3.1\first.dll
+C:\Dojo_Assignments\C#\first\obj\Debug\netcoreapp3.1\first.pdb
